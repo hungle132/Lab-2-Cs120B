@@ -24,25 +24,26 @@ int main(void) {
 	unsigned char cntavail = 0x00;
     /* Insert your solution below */
     while (1) {
-	tmpA = 0x01;//pin 0
-	tmpA1 = 0x02; //pin 1
-	tmpA2 = 0x04; //pin 2
-	tmpA3 = 0x08;// pin 3
+	tmpA = PINA & 0x01;//pin 0
+	tmpA1 = PINA & 0x02; //pin 1
+	tmpA2 = PINA & 0x04; //pin 2
+	tmpA3 = PINA & 0x08;// pin 3
+
 	if(tmpA == 0x01){
-		tmpA==0x01;
-		cntavail+=tmpA;
+		cntavail++;
 	}
+
 	if(tmpA1 == 0x01){
-		tmpA1==0x02;
-		cntavail+=tmpA1;
+		
+		cntavail++;
 	}
 	if(tmpA2 == 0x01){
-		tmpA2==0x04;
-		cntavail+=tmpA2;
+	
+		cntavail++;
 	}
 	if(tmpA3 == 0x01){
-		tmpA3==0x08;
-		cntavail+=tmpA3;
+		
+		cntavail++;
 	}
 	PORTC=cntavail;
     }
