@@ -22,10 +22,10 @@ int main(void) {
     /* Insert your solution below */
     while (1) {
 	tempA = PINA & 0x03;
-	if (temp == 0x01){
-		out = (out & 0xFC) | 0x01;
+	if (tempA == 0x01){
+		tempB = (tempB & 0xFC) | 0x01;
 	}
-	PORTB = out;
+	PORTB = tempB;
     }
     return 1;
 }
