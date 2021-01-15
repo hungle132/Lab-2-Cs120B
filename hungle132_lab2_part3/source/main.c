@@ -23,7 +23,8 @@ int main(void) {
 	unsigned char tmpA1 = 0x00;
 	unsigned char tmpA2 = 0x00;
 	unsigned char tmpA3 = 0x00;
-	unsigned char cntavail = 0x00;
+	unsigned char cntavail = 0x04;
+	unsigned char val = 0x00
     /* Insert your solution below */
     while (1) {
 	cntavail = 0x04;
