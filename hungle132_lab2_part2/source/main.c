@@ -24,24 +24,26 @@ int main(void) {
 	unsigned char cntavail = 0x00;
     /* Insert your solution below */
     while (1) {
+	cntavail = 0x04;
+	val = 0x00;
 	tmpA = PINA & 0x01;//pin 0
 	tmpA1 = PINA & 0x02; //pin 1
 	tmpA2 = PINA & 0x04; //pin 2
 	tmpA3 = PINA & 0x08;// pin 3
 
-	if(tmpA == 0x01){
+	if(tmpA == 1){
 		cntavail++;
 	}
 
-	if(tmpA1 == 0x01){
+	if(tmpA1 == 2){
 		
 		cntavail++;
 	}
-	if(tmpA2 == 0x01){
+	if(tmpA2 == 4){
 	
 		cntavail++;
 	}
-	if(tmpA3 == 0x01){
+	if(tmpA3 == 8){
 		
 		cntavail++;
 	}
