@@ -25,6 +25,9 @@ int main(void) {
 	if (tempA == 0x01){
 		tempB = (tempB & 0xFC) | 0x01;
 	}
+	    else{
+		    tempB = 0;
+	    }
 	PORTB = tempB;
     }
     return 1;
