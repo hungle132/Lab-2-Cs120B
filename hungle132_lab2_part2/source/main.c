@@ -32,21 +32,22 @@ int main(void) {
 	tmpA3 = PINA & 0x08;// pin 3
 
 	if(tmpA == 1){
-		cntavail++;
+		val++;
 	}
 
 	if(tmpA1 == 2){
 		
-		cntavail++;
+		val++;
 	}
 	if(tmpA2 == 4){
 	
-		cntavail++;
+		val++;
 	}
 	if(tmpA3 == 8){
 		
-		cntavail++;
+		val++;
 	}
+	    cntavail = cntavail-val;
 	PORTC=cntavail;
     }
     return 0;
